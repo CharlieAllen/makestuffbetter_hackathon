@@ -1,7 +1,8 @@
-<h2>Here are our Partners</h2>
+<h2>Our Partners.</h2><hr>
 
 <p>
-  <% @partners.each do |partner| %>\
-    <p><%= partner.name %></p>
+  <% @partners.each do |partner| %>
+    <p><strong>Name:</strong> <%= partner.id %></p>
+    <p><strong>Address:</strong> <%= partner.address %></p><hr>
   <% end %>
 </p> 

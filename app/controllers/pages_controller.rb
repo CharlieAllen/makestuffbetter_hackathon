@@ -10,4 +10,8 @@ class PagesController < ApplicationController
   def partners
     @partners = Partner.all
   end
+
+  def user_page
+    @user = User.first
+  end
 end
