@@ -21,6 +21,10 @@ ActiveRecord::Schema.define(version: 20161105211041) do
   end
 
   create_table "users", force: :cascade do |t|
+    t.string   "user_id"
+    t.string   "results"
+    t.integer  "date"
+    t.string   "from"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
